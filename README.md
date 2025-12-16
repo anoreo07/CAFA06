@@ -8,8 +8,6 @@ This repository contains the source code for our solution to the CAFA 6 Protein 
 CAFA06/
 ├── model/
 │   ├── Ensemble/
-│   │   ├── ensemble.ipynb       # Experimentation notebook
-│   │   ├── ensemble.py          # Script for blending logic
 │   │   ├── final.ipynb          # Final submission generation (Notebook)
 │   │   └── final.py             # Final submission generation (Script)
 │   │
