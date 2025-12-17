@@ -167,7 +167,6 @@
         
         for epoch in range(cfg.EPOCHS):
             model.train()
-            t_loss = 0
             for x, y in train_loader:
                 x, y = x.to(cfg.DEVICE), y.to(cfg.DEVICE)
                 optimizer.zero_grad()
@@ -175,7 +174,6 @@
                 loss = criterion(logits, y)
                 loss.backward()
                 optimizer.step()
-                t_loss += loss.item()
                 
             model.eval()
             v_loss = 0
@@ -496,4 +494,5 @@
         
         print("Done!")
     if __name__ == "__main__":
+
         main()
