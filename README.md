@@ -39,7 +39,7 @@ You need to generate the prediction scores from the individual models first. The
 
 #### Option A: Residual MLP + KNN
 This module uses ProtT5 embeddings and combines a Deep Residual Network with a Weighted KNN search.
-
+![System Architecture Diagram](system_diagram.png)
 1. Navigate to `model/ResidentalBlocks+KNN/`.
 2. Open `ResidentalBlock+KNN.py` (or the `.ipynb` version).
 3. **Update the input paths** for training data and embeddings.
@@ -62,6 +62,7 @@ This module extracts local features using 1D-CNN and global features using SE-Re
    Output: This will save the prediction scores (e.g., cnn_resnet_preds.npy).
    
 ### Step 2: Generate Final Ensemble Submission
+![System Architecture Diagram](section_3_3_diagram.png)
 Once you have the predictions from both models above, run the final ensemble script to blend the results, apply hierarchical consistency (True Path Rule), and inject external knowledge.
 
 1. Navigate to `model/Ensemble/`.
@@ -81,6 +82,8 @@ Once you have the predictions from both models above, run the final ensemble scr
 * **Ensemble:** Linear weighted blending ($\alpha \cdot M_1 + (1-\alpha) \cdot M_2$).
 * **Post-processing:** Hierarchical Consistency enforcement and Knowledge Injection (UniProt-GOA).
 
+## Our ranking (16/12/2025)
+![System Architecture Diagram](Screenshot_2025-12-16_173124.png)
 ## Authors
 
 * **Nguyen Hai An** 
