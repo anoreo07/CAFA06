@@ -83,7 +83,7 @@ Once you have the predictions from both models above, run the final ensemble scr
 * **Post-processing:** Hierarchical Consistency enforcement and Knowledge Injection (UniProt-GOA).
 
 ## Our ranking (16/12/2025)
-![System Architecture Diagram](Screenshot_2025-12-16_173124.png)
+![System Architecture Diagram](ranking.png)
 ## Authors
 
 * **Nguyen Hai An** 
